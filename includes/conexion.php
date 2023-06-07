@@ -9,3 +9,6 @@ $base_de_datos = 'blog';
 $db = mysqli_connect($servidor, $usuario, $password, $base_de_datos);
 
 mysqli_query($db, "SET NAMES 'utf8'");
+
+// iniciar la seccion 
+session_start();
