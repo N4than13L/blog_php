@@ -1,6 +1,7 @@
 <?php
-require_once "conexion.php";
-?>
+include_once "conexion.php"; ?>
+
+<?php include_once "includes/helpers.php"; ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -30,18 +31,23 @@ require_once "conexion.php";
                 <li>
                     <a href="index.php">inicio</a>
                 </li>
-                <li>
-                    <a href="index.php">categoria 1</a>
-                </li>
-                <li>
-                    <a href="index.php">categoria 2</a>
-                </li>
-                <li>
-                    <a href="index.php">categoria 3</a>
-                </li>
+
+                <?php
+                $categorias = conseguir_categorias($db);
+                if (!empty($categorias)) :
+                    while ($categoria = mysqli_fetch_assoc($categorias)) : ?>
+                        <li>
+                            <a href="categorias.php?id=<?= $categoria['id']; ?>"><?= $categoria['nombre']; ?></a>
+                        </li>
+                <?php
+                    endwhile;
+                endif; ?>
+
+
                 <li>
                     <a href="index.php">sobre mi</a>
                 </li>
+
                 <li>
                     <a href="index.php">contacto</a>
                 </li>
@@ -49,6 +55,3 @@ require_once "conexion.php";
         </nav>
         <div class="clearfix"></div>
     </header>
-
-    <!-- contenedor -->
-    <div id="contenedor">
