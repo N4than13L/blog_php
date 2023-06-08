@@ -138,14 +138,67 @@ input[type="password"] {
 }
 
 input[type="buttom"],
-input[type="submit"] {
+input[type="submit"],
+.boton {
   margin-top: 5px;
   margin-bottom: 5px;
   display: block;
   border-radius: 2px;
   padding: 15px;
-  color: wheat;
+  color: white;
   background-color: #2979cd;
+  border: 1px solid #156785;
+  padding: 10px;
+}
+
+.boton {
+  width: auto;
+}
+
+.boton-rojo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 2px;
+  padding: 15px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  border: 1px solid #156785;
+  padding: 10px;
+}
+
+.boton-verde {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 2px;
+  padding: 15px;
+  color: white;
+  background-color: rgb(28, 154, 74);
+  border: 1px solid #156785;
+  padding: 10px;
+}
+
+.boton-naranja {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 2px;
+  padding: 15px;
+  color: white;
+  background-color: orange;
+  border: 1px solid #156785;
+  padding: 10px;
+}
+
+.boton-azul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 2px;
+  padding: 15px;
+  color: white;
+  background-color: #2198cf;
   border: 1px solid #156785;
   padding: 10px;
 }
@@ -209,4 +262,22 @@ input[type="submit"] {
   border-bottom: none;
   text-align: center;
   font-size: 20px;
+}
+
+.alerta {
+  padding: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: yellowgreen;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.alerta_error {
+  padding: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: crimson;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

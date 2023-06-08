@@ -1,10 +1,11 @@
 <?php
+
 if (isset($_POST)) {
 
     //Conexión a la base de datos;
     require_once 'includes/conexion.php';
     //Iniciar sesion
-    if ($_SESSION) {
+    if (!isset($_SESSION)) {
         session_start();
     }
 
@@ -17,9 +18,8 @@ if (isset($_POST)) {
     // Array errores
     $errores = array();
 
-
-    // Validar los datos antes de guardarlo en la base de datos
-    // Validar nombre
+    // Validar los datos antes de guardarlo en la base de datos.
+    // Validar nombre.
     if (!empty($nombre) && !is_numeric($nombre) && !preg_match('/[0-9]/', $nombre)) {
         $nombre_validado = true;
     } else {
