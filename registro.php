@@ -51,8 +51,8 @@ if (isset($_POST)) {
         $errores['password'] = 'La password no es valido';
     }
 
-
     $guardar_usuario = false;
+
     if (count($errores) == 0) {
         $guardar_usuario = true;
 
@@ -60,7 +60,7 @@ if (isset($_POST)) {
         $password_segura = password_hash($password, PASSWORD_BCRYPT, ['cost' => 4]);
 
         // INSERTAR USUARIO EN LA BD
-        $sql = "INSERT INTO usuarios VALUES(null, '$nombre','$apellidos', '$email', '$password_segura', CURDATE())";
+        $sql = "INSERT INTO usuarios VALUES(null, '$nombre','$apellidos', '$email', '$password_segura', CURDATE());";
         $guardar = mysqli_query($db, $sql);
 
         var_dump(mysqli_error($db));

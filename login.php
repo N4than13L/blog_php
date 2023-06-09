@@ -16,7 +16,7 @@ if (isset($_POST)) {
     $password = $_POST['password'];
 
     // consulta para verificar el usuario y contrasena db.
-    $sql = "SELECT * FROM usuarios WHERE email='$email'";
+    $sql = "SELECT * FROM usuarios WHERE email='$email';";
     $login = mysqli_query($db, $sql);
 
     if ($login && mysqli_num_rows($login) == 1) {

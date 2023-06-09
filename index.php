@@ -30,7 +30,6 @@
 
 </div>
 <!-- fin del contenedor -->
-
 <?php include_once "includes/pie.php"; ?>
 
 </body>

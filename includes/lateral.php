@@ -8,9 +8,9 @@
                    <div id="usuario_logeado" class="bloque">
                        <h3>Bienvenid@, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellidos']; ?></h3>
                        <!-- botones. -->
-                       <a class="boton-verde" href="cerrar.php">crear entradas</a>
-                       <a class="boton-azul" href="cerrar.php">crear categorias</a>
-                       <a class="boton-naranja" href="cerrar.php">mis datos</a>
+                       <a class="boton-verde" href="crear_entradas.php">Crear entradas</a 15px;a>
+                       <a class="boton-azul" href="crear_categoria.php">Crear categorias</a>
+                       <a class="boton-naranja" href="cerrar.php">Configuracion</a>
                        <a class="boton-rojo" href="cerrar.php">cerrar cesion</a>
 
                    </div>
