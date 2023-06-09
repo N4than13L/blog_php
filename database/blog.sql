@@ -260,3 +260,12 @@ SHOW TABLES;
 DROP VIEW entradas_con_nombres_dos;
 
 SELECT * FROM entradas_con_nombres WHERE autor = 'jose';
+
+
+-- consulta de pruebas.
+
+SELECT e.*, c.nombre AS 'categoria' FROM entradas e INNER JOIN categorias c ON e.categoria_id= c.id WHERE e.categoria_id = 3 ORDER BY e.id DESC;
+
+SELECT e.*, c.nombre AS 'categoria' FROM entradas e 
+        INNER JOIN categorias c ON e.categoria_id = c.id
+        WHERE e.id = 12;

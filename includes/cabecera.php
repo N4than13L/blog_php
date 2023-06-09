@@ -37,7 +37,7 @@ include_once "conexion.php"; ?>
                 if (!empty($categorias)) :
                     while ($categoria = mysqli_fetch_assoc($categorias)) : ?>
                         <li>
-                            <a href="categorias.php?id=<?= $categoria['id']; ?>"><?= $categoria['nombre']; ?></a>
+                            <a href="categoria.php?id=<?= $categoria['id']; ?>"><?= $categoria['nombre']; ?></a>
                         </li>
                 <?php
                     endwhile;

@@ -42,11 +42,11 @@
                    <?php borrar_errores(); ?>
                </div>
        </aside>
+
        <hr />
        <aside class="bloque">
            <div class="bloque">
                <h3>Registrate aquí</h3>
-
                <!-- mostrar errores y mensajes de exito -->
                <?php
                 if (isset($_SESSION['completado'])) : ?>
