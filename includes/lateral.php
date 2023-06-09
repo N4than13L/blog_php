@@ -10,7 +10,7 @@
                        <!-- botones. -->
                        <a class="boton-verde" href="crear_entradas.php">Crear entradas</a 15px;a>
                        <a class="boton-azul" href="crear_categoria.php">Crear categorias</a>
-                       <a class="boton-naranja" href="cerrar.php">Configuracion</a>
+                       <a class="boton-naranja" href="mis_datos.php">Configuración</a>
                        <a class="boton-rojo" href="cerrar.php">cerrar cesion</a>
 
                    </div>
