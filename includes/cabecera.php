@@ -42,16 +42,9 @@ include_once "conexion.php"; ?>
                 <?php
                     endwhile;
                 endif; ?>
-
-
-                <li>
-                    <a href="index.php">sobre mi</a>
-                </li>
-
-                <li>
-                    <a href="index.php">contacto</a>
-                </li>
             </ul>
         </nav>
         <div class="clearfix"></div>
+        <button id="ayuda"> ? ayuda</button>
+        <div id="texto_ayuda"></div>
     </header>

@@ -111,14 +111,16 @@ body {
 }
 
 .bloque {
-  display: flex;
+  /* display: flex; */
   /* float: right; */
   width: 100%;
   margin: 0px auto;
   background-color: white;
-  padding: 5px;
-  margin-bottom: 0px;
-  border-radius: 15px;
+  padding: 0px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 10px;
 }
 
 .bloque h3 {
@@ -298,4 +300,32 @@ input[type="submit"],
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#ayuda {
+  float: right;
+  background-color: #2198cf;
+  color: #d6d6d6;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.buscar {
+  background-color: #959595;
+  width: 80%;
+  float: left;
+  margin: 15px;
+  margin-left: 100px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#texto_ayuda {
+  background-color: #2198cf;
+  color: #d6d6d6;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: auto;
 }

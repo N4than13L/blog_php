@@ -105,3 +105,30 @@ function conseguir_entradas($conexion, $limit = null, $categoria = null)
     }
     return $entradas;
 }
+
+function buscar_entradas($conexion, $limit = null, $categoria = null, $busqueda = null)
+{
+    $sql = "SELECT e.*, c.nombre AS 'categoria' FROM entradas e INNER JOIN  categorias c ON e.categoria_id= c.id ";
+
+    if (!empty($categoria)) {
+        $sql .= "WHERE e.categoria_id = $categoria ";
+    }
+
+    if (!empty($busqueda)) {
+        $sql .= "WHERE e.titulo = '%$busqueda%' ";
+    }
+    $sql .= "ORDER BY e.id DESC";
+    if ($limit != null) {
+        $sql .= "LIMIT 4";
+    }
+
+
+    $entradas = mysqli_query($conexion, $sql);
+
+    $resultado = array();
+
+    if ($entradas && mysqli_num_rows($entradas) >= 1) {
+        $resultado = $entradas;
+    }
+    return $entradas;
+}
