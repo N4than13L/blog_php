@@ -1,15 +1,14 @@
-    <!-- buscador -->
-    <aside class="principal">
-        <form action="buscar.php" class="buscar" method="POST">
-            <label for="busqueda">Buscar</label>
-            <input type="text" name="busqueda" />
-
-            <input type="submit" value="Buscar" />
-        </form>
-    </aside>
     <!-- contenedor -->
     <div id="contenedor">
+        <!-- buscador -->
+        <aside class="bloque">
+            <form action="buscar.php" method="POST">
+                <label for="busqueda">Buscar</label>
+                <input type="text" name="busqueda" />
 
+                <input type="submit" value="Buscar" />
+            </form>
+        </aside>
         <!-- sidebar -->
         <aside class="bloque">
             <!-- cuando el login sea correcto. -->
