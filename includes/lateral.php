@@ -49,7 +49,7 @@
                         <input type="password" name="password" />
                         <span id="password_login"></span>
 
-                        <input type="submit" value="Entrar" />
+                        <input type="submit" onclick="validate()" value="Entrar" />
                     </form>
                     <?php borrar_errores(); ?>
                 </div>
