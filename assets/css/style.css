@@ -329,3 +329,11 @@ input[type="submit"],
   border-radius: 5px;
   width: auto;
 }
+
+#texto-muestra {
+  background-color: #2198cf;
+  color: aliceblue;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 15px;
+}

@@ -46,5 +46,8 @@ include_once "conexion.php"; ?>
         </nav>
         <div class="clearfix"></div>
         <button id="ayuda"> ? ayuda</button>
+        <article id="texto-muestra">
+            En este blog te podras registrar y agregar las diferentes entradas y categorias <button class="boton-rojo" id="cerrar-msj">X</button>
+        </article>
         <div id="texto_ayuda"></div>
     </header>

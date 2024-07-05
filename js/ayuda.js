@@ -1,9 +1,11 @@
-var ayuda = document.getElementById("ayuda");
-var texto_ayuda = document.getElementById("texto_ayuda");
+$(document).ready(function () {
+  $("#texto-muestra").hide();
 
-ayuda.addEventListener("click", () => {
-  texto_ayuda.innerText = `
-    En este blog te podras registrar y agregar las diferentes entradas y categorias
-  
-  `;
+  $("#ayuda").on("click", function () {
+    $("#texto-muestra").show();
+  });
+
+  $("#cerrar-msj").on("click", function () {
+    $("#texto-muestra").hide();
+  });
 });
