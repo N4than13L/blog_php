@@ -28,7 +28,7 @@ if (isset($_POST)) {
         $apellidos_validado = true;
     } else {
         $apellidos_validado = false;
-        $errores['apellido'] = 'Los apellido no es valido';
+        $errores['apellidos'] = 'Los apellido no es valido';
     }
 
     // Validar email      

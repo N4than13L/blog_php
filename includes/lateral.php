@@ -15,7 +15,7 @@
             <div class="bloque">
                 <?php if (isset($_SESSION['usuario'])) : ?>
                     <div id="usuario_logeado" class="bloque">
-                        <h3>Bienvenid@, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellidos']; ?></h3>
+                        <h3>Bienvenid@, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellido']  ?></h3>
                         <!-- botones. -->
                         <a class="boton-verde" href="crear_entradas.php">Crear entradas</a 15px;a>
                         <a class="boton-azul" href="crear_categoria.php">Crear categorias</a>

@@ -19,7 +19,7 @@ if (!isset($_POST['busqueda'])) {
                     <h2>
                         <?= $entrada['titulo']; ?>
                     </h2>
-                    <span class="fecha"><?= $entrada['categoria'] . ' ' . $entrada['fecha']; ?></span>
+                    <span class="fecha"><?= $entrada['categorias'] . ' ' . $entrada['fecha']; ?></span>
                     <p>
                         <?= substr($entrada['descripcion'], 0, 200) . "..."; ?>
                     </p>
