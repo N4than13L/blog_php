@@ -17,6 +17,7 @@ if (!isset($entrada_actual['id'])) {
     <h2>Edita tus entradas</h2>
     <p>Edita tu enetrada: <?= $entrada_actual['titulo'] ?></p>
 
+    <h3 id="mensaje-actualizar">Entrada actualizada con exito</h3>
     <form action="guardar_entradas.php?editar=<?= $entrada_actual['id'] ?>" method="POST">
         <label for="titulo">Titulo:</label>
         <input type="text" name="titulo" placeholder="nombre de la categoria" value="<?= $entrada_actual['titulo'] ?>" />

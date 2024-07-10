@@ -20,7 +20,11 @@
                     <?= $_SESSION['errores']['general'] ?>
                 </div>
             <?php endif;  ?>
-            <form action="actualizar_usuario.php" method="POST">
+
+
+            <h3 id="mensaje-actualizado">Tus datos se han actualizados con exito</h3>
+
+            <form id="actualizar_usuario">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" value="<?= $_SESSION['usuario']['nombre']; ?>" />
                 <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'nombre') : ''; ?>

@@ -4,6 +4,10 @@
 <script src="js/jquery-3.7.1.js"></script>
 
 <!-- scripts para el login y mas opciones -->
+<script src="js/actualizar_entrada.js"></script>
+<script src="js/actualizar_usuario.js"></script>
+<script src="js/crear_entradas.js"></script>
+<script src="js/crear-categorias.js"></script>
 <script src="js/register.js"></script>
 <script src="js/ayuda.js"></script>
 

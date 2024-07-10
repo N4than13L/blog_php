@@ -6,7 +6,8 @@
 <div id="principal">
     <h1>Crear entradas</h1>
     <h2>Agrega las entradas para los demas puedan disfrutar de las publicaciones</h2>
-    <form action="guardar_entradas.php" method="POST">
+    <form id="guardar_entradas">
+        <h3 id="mensaje-entrada">Entrada guardada con exito</h3>
         <label for="titulo">Titulo:</label>
         <input type="text" name="titulo" placeholder="nombre de la categoria" />
         <?php echo isset($_SESSION['errores_entradas']) ? mostrar_errores($_SESSION['errores_entradas'], 'titulo') : ''; ?>
