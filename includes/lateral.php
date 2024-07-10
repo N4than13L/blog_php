@@ -15,7 +15,7 @@
             <div class="bloque">
                 <?php if (isset($_SESSION['usuario'])) : ?>
                     <div id="usuario_logeado" class="bloque">
-                        <h3>Bienvenid@, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellido']  ?></h3>
+                        <h3>Bienvenid@, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellidos']  ?></h3>
                         <!-- botones. -->
                         <a class="boton-verde" href="crear_entradas.php">Crear entradas</a 15px;a>
                         <a class="boton-azul" href="crear_categoria.php">Crear categorias</a>
@@ -68,21 +68,24 @@
                         <?= $_SESSION['errores']['general'] ?>
                     </div>
                 <?php endif;  ?>
-                <form action="registro.php" method="POST">
+                <form id="register">
+                    <div id="mensaje-registro">
+                        <h4>Registrado con exito</h4>
+                    </div>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" />
+                    <input type="text" name="nombre" id="nombre" />
                     <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'nombre') : ''; ?>
 
                     <label for="apellidos">apellido</label>
-                    <input type="text" name="apellidos" />
+                    <input type="text" name="apellidos" id="apellidos" />
                     <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'apellido') : ''; ?>
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" id="email" />
                     <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'email') : ''; ?>
 
                     <label for="password">Contraseña</label>
-                    <input type="password" name="password" />
+                    <input type="password" name="password" id="password" />
                     <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'password') : ''; ?>
 
                     <input type="submit" value="Registrar" name="submit" />

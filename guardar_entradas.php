@@ -36,7 +36,7 @@ if (isset($_POST)) {
             $entrada_id = $_GET['editar'];
             $usuario_id = $_SESSION['usuario']['id'];
 
-            $sql = "UPDATE entradas SET titulo='$titulo',  descripcion='$descripcion', categoria_id=$categoria WHERE id = $entrada_id AND usuario_id = $usuario_id";
+            $sql = "UPDATE entradas SET titulo='$titulo',  descripcion='$descripcion', categorias_id=$categoria WHERE id = $entrada_id AND usuarios_id = $usuario_id";
 
             $guardar = mysqli_query($db, $sql);
         } else {

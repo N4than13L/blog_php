@@ -25,6 +25,7 @@ if (isset($_POST)) {
     } else {
         $nombre_validado = false;
         $errores['nombre'] = 'El nombre no es valido';
+        echo json_decode("nombre incorrecto, no debe ir vacio");
     }
 
     // Validar apellidos
@@ -33,6 +34,7 @@ if (isset($_POST)) {
     } else {
         $apellidos_validado = false;
         $errores['apellido'] = 'Los apellido no es valido';
+        echo json_decode("apellido incorrecto, no debe ir vacio");
     }
 
     // Validar email      
@@ -41,6 +43,7 @@ if (isset($_POST)) {
     } else {
         $email_validado = false;
         $errores['email'] = 'El email no es valido';
+        echo json_decode("email incorrecto, no debe ir vacio");
     }
 
     // Validar la contraseña
@@ -49,6 +52,7 @@ if (isset($_POST)) {
     } else {
         $password_validado = false;
         $errores['password'] = 'La password no es valido';
+        echo json_decode("contraseña incorrecto, no debe ir vacio");
     }
 
     $guardar_usuario = false;

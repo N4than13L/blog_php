@@ -33,9 +33,7 @@ if (!isset($entrada_actual['id'])) {
             <?php $categorias = conseguir_categorias($db);
             if (!empty($categorias)) :
                 while ($categoria = mysqli_fetch_assoc($categorias)) : ?>
-                    <option value="<?= $categoria['id']; ?>" <?= ($categoria['id'] == $entrada_actual['categoria_id'] ? 'Selected="selected"' : "") ?>>
-
-
+                    <option value="<?= $categoria['id']; ?>" <?= ($categoria['id'] == $entrada_actual['categorias_id'] ? 'Selected="selected"' : "") ?>>
                         <?= $categoria['nombre']; ?>
                     </option>
             <?php endwhile;
@@ -49,8 +47,6 @@ if (!isset($entrada_actual['id'])) {
     <?php borrar_errores();  ?>
 
 </div>
-
-
 
 
 <!-- fin del contenedor -->

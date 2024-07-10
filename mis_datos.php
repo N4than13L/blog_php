@@ -26,7 +26,7 @@
                 <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'nombre') : ''; ?>
 
                 <label for="apellidos">Apellidos</label>
-                <input type="text" name="apellidos" value="<?= $_SESSION['usuario']['apellido']; ?>" />
+                <input type="text" name="apellidos" value="<?= $_SESSION['usuario']['apellidos']; ?>" />
                 <?php echo isset($_SESSION['errores']) ? mostrar_errores($_SESSION['errores'], 'apellidos') : ''; ?>
 
                 <label for="email">Email</label>
